@@ -1,0 +1,125 @@
+Quiz on feb 2: Topics: chapter 2,3 and 4. MOSTLY chapter 3 and 4.
+
+-You don't have to memorize linux commands, just know what they do.
+
+
+Chapter 2: Review
+
+-Chapter 2 is super important (professor said this)
+
+-When do we create a process?
+--Process is created when the job comes into the queue, then they decides whether we can create a process for it. We much determine if we have the memory to run the process.
+
+-Life cycle of process
+--There is a queue before the process is created to hold the jobs that are trying to be made into process, then when the process is created then we have a queue to process the processes.
+
+High priority processes get run first
+
+PCB
+--descriptor for the process
+
+IO devices
+
+Scheduler
+
+Process vs thread
+Some processes can have one or more threads
+A thread is a lightweight process, thread is a fine grain unit, but process is the fundamental unit for computing
+This is because the operating system gives the process memory to execute it.
+
+Thread has state, ID, variables.
+
+Types of threads:
+-User level threads
+-Kernel level threads.
+
+
+
+
+
+Chapter 3:  Systems and Models
+
+-System is the part of the real world under study. It has entities interacting among themselves
+-Model is abstract representation of the system.
+-System has structure and behavior.
+-Model depends on the passage of time, input data and the events made by the environment
+
+Types of models: Physical, graphical and mathematical models: Mathematical models are the most flexible ones, its the best way to understand models
+
+Mathematical models:
+-Analytic, numeric, deterministic and stochastic models.
+
+Deterministic models:
+-Models that have a completely predictable dehavior (100% certainty)
+-Stochastic modeks: models that display uncertainty.
+
+Stochastic models:
+-Implemented as random variables, values change according to some probability distribution
+
+Random Variables:
+-Values that change randomly based on mathematical computations taking place in the model.
+
+
+COntinuous models and Discrete models
+-Change their state continuously with time.
+-Discrete models change their states in a limited time.
+
+Simulation results
+-2 TYPES OF OUTPUTS
+--Trace and performance measures
+
+Modeling nd simulation are used to study the different components and various aspects of an operating systems
+
+Performance measures:
+
+Measures indicate how good or bad the systems are carrying out their functions with some aspect.
+Usually several performance measures are necessary
+
+
+Performance:
+Goals that can be measures without looking at the internals of the systems example:
+-Maximize work performed (Throughtput)
+-Minimize response time
+-fairness
+
+Performance goals
+-For subsystems internal to the computer
+Examples:
+	-Maximize cpu time
+		--Time the cpu is busy
+	-Maximize disk utilization
+		--Time disk is busy
+	-Minimize disk access time
+		--time it takes to perform a disk request
+
+ABSTRACTION----(IMPORTANT)
+-It is a high level description of object
+
+Workload Parameters:Look on slide
+System Parameters:Look on slide
+
+More memory = more processes can be run
+
+Arrival rate is the time between 22 resource requests arriving
+Arrival rate = 1/Arrival Interval
+
+Service Time is the time to actually perform a request
+Service Rate = 1/Service time
+--Denoted by mew
+--eg: 2 requests/second
+
+Arrival Rate<Service rate //Look on slide to see what happens
+Arrival Rate = Service rate //Look on slide
+
+Service time: Is the service time for a given request always the same?
+--It can vary
+
+Bottleneck
+-The computer system reaches capacity when one of more of its servers or recources reach a utilization is close to 100%
+
+Bottleneck of the computer system described can be localized at the processor
+
+Multi-programming
+-In most computer systems, the io controllers enable a system to overlap device i/o operation with processor operation.
+-This results in a more effecient utilization of the system facilities
+-Processor ultilization and I/O device utilization is higher
