@@ -1,0 +1,30 @@
+2) In the simulation model of the producer-consumer, would the full and empty
+semaphores be necessary if the buffer had a single slot? Explain. Implement the
+changes in the simulation model.
+Write pseudocode for both consumer and producer. 
+Problem: Suppose there the buffer has only 1 slot, which could only store 1 data item. Could you rewrite the producer and consumer code with at most 2 semaphores?
+
+If there is only a sigle slot then we do not need a full or empty semaphore
+
+Pseudocode: 
+
+Semaphores produces, consumer;
+
+int buffer = 1;
+
+producer.num = 1;
+consumer.num = 1;
+
+while(true){ //Code for producer
+
+signal(consumer); // send signal to consumer to empty out buffer
+wait(consumer); //wait till consumer finishes
+
+}
+
+while(true){
+
+wait(producer); //wait for producer to send the signal
+signal(producer); //empty the buffer
+
+}
